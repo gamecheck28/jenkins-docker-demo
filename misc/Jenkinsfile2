@@ -1,6 +1,8 @@
 node {
 	stage('check hostname') {
 		checkout scm
-		sh "hostname; pwd; ls;"	
+	}
+	stage('print hostname') {
+		sh 'hostname'
 	}
 }
